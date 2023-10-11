@@ -16,13 +16,15 @@ const Calculadora = ({ peso, altura }) => {
             } else {
                 setClassificacao('obeso');
             }
+        }else{
+            setClassificacao('adicione valores validos')
         }
     }, [imc]);
 
     return (
         <>
             <div className={styles.imc}>
-                <h3>SEU IMC É DE: <b className={styles.resultado}>{isNaN(imc) ? '' : imc}</b></h3>
+                <h3>SEU IMC É DE: <b className={styles.resultado}>{isNaN(imc) ? 'operação invalida' : imc}</b></h3>
                 <p className={styles.classificacaoImc}>{classificacao}</p>
             </div>
         </>
