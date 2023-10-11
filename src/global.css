@@ -1,0 +1,38 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    height: 640px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.input-name{
+    margin-top: 20px;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.text-input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:767px) {
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+}
